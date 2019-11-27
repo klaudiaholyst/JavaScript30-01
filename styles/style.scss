@@ -1,0 +1,48 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Odibee Sans', cursive, sans-serif;
+
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('/img/drums.jpg') bottom center;
+    background-size: cover;
+}
+.key{
+    width:5rem;
+    border: rgb(49, 38, 8) solid 0.2rem;
+    border-radius: 1rem;
+    margin:2rem;
+    padding:2rem;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    &--playing{
+    transform: translateY(-3rem);
+    border-color: salmon;
+    box-shadow: 0 0 0.5rem salmon;
+}
+    &__letter{
+        font-size: 5rem;
+        margin:0;
+        color: beige;
+        
+    }
+    &__sound{
+        margin-bottom: 0;
+        color: rosybrown;
+        font-size: 2rem;
+        transition: 0.2s ease;
+        &--playing{
+           transform: rotate(30deg);
+        }
+    }
+}
